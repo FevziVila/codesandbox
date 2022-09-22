@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Screen {
+  position: relative;
+}
+
+.Button,
+.Input {
+  position: absolute;
+}
+
+.Button.debug {
+  font-size: 10px;
+  background-color: red;
+  opacity: 0.9;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.Input input {
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+  font-size: 120%;
+}
+
+.Input.row {
+  align-items: center;
+}
+.Input.row input {
+  margin-left: 10px;
+}
